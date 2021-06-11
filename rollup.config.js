@@ -43,8 +43,10 @@ export default {
     json(),
     babel({
       babelHelpers: `bundled`,
+      skipPreflightCheck: true,
       exclude: `node_modules/**`,
       presets: [`@babel/preset-env`, `@babel/preset-react`],
+      plugins: [`@babel/plugin-transform-runtime`]
     }),
     resolve(),
     commonjs(),
