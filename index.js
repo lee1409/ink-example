@@ -1,8 +1,4 @@
-import React from 'react';
-import { render } from 'ink';
-import Index from './src/index';
-import logger from './src/logger';
+import logger from "./src";
 
-render(<Index/>);
-logger.log("Hello world");
-logger.log("ABABABAB");
+logger.log("hello world");
+logger.log("Ababc");
